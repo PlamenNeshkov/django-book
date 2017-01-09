@@ -37,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog'
+    'blog',
+    'taggit',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -82,7 +83,6 @@ DATABASES = {
     }
 }
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
@@ -101,3 +101,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.google.com'
+EMAIL_HOST_USER = 'plamen0neshkov@gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+
+
+
+
+
+
+
+
+EMAIL_HOST_PASSWORD = 'JollyC0der87'
